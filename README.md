@@ -16,6 +16,8 @@
 
 ## 단축키
 - rafce : 파일 내용 자동 생성
+- npm start : 터미널에서 node 실행
+- npm run build : 터미널에서 build 파일 생성
 
 ## 필요한 라이브러리 설치
 - react 설치  `npm create-react-app 폴더이름` : 폴더를 생략하고 싶으면 app . 으로 설치
