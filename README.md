@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Youtube API를 이용한 차(Tea) 사이트
+- 최근에 녹차를 선물받아서 그 향이 너무 좋아서 차(Tea)에 대한 관심이 더 생겼습니다.   
+이를 바탕으로 Youtube API를 활용하여 차(Tea) 사이트를 개발하고자 합니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 작업 순서
+1. Node.js 설치
+노드 다운로드 페이지(https://nodejs.org/en/download)에서 버전 20을 다운로드 받습니다.   
+설치가 완료되면 터미널에서 node -v를 입력하여 버전을 확인합니다.
 
-## Available Scripts
+2. 프로젝트 폴더 설정
+깃허브에서 youtube-api라는 이름의 새로운 폴더를 생성합니다.   
+이 폴더를 열어서 작업을 진행합니다.
 
-In the project directory, you can run:
+3. 불필요한 파일 제거 및 셋팅
+새로 생성한 youtube-api 폴더 내에는 필요 없는 파일들을 삭제하고, 프로젝트에 필요한 설정을 해줍니다.
 
-### `npm start`
+## 필요한 라이브러리 설치
+- react 설치  `npm create-react-app 폴더이름` : 폴더를 생략하고 싶으면 app . 으로 설치
+- react-router-dom 설치 `npm install react-router-dom` : 주소 설정을 위한 라이브러리
+- axios 설치 `npm install axios` : API라이브러리
+- react icon 설치 `npm install react-icons` : 리액트에 필요한 아이콘
+- react-player 설치 `npm install react-player` : 유튜브 영상 재생
+- sass 설치 `npm install sass` : CSS 라이브러리
+- react-helmet-async 설치 `npm install react-helmet-async` : SEO
+- swiper 설치 `npm install swiper` : 이미지 슬라이드
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 사용 스택
+- node.js 설치
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 트러블 슈팅
+1. npx create-react-app . 실행 후 에러 발생 시
+-> 만약 경로 설정 관련 에러가 발생한다면, 해당 경로에 들어가 폴더에 npm 초기화 폴더를 만들어준 후   
+다시 npx create-react-app .을 입력하고 'y'를 눌러줍니다."# youtubeAPI" 
